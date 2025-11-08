@@ -20,9 +20,9 @@ A full-stack web application for tracking daily habits with streak tracking, pro
 - **Styling**: CSS Modules
 - **Build Tool**: Vite
 
-![Screenshot 1](habify/Skärmbild 2025-11-08 142157.png)
-![Screenshot 2](habify/Skärmbild 2025-11-08 142202.png)
-![Screenshot 3](habify/Skärmbild 2025-11-08 142206.png)
+<img src="habify/Skärmbild 2025-11-08 142157.png" alt="Screenshot 1" width="300">
+<img src="habify/Skärmbild 2025-11-08 142202.png" alt="Screenshot 2" width="300">
+<img src="habify/Skärmbild 2025-11-08 142206.png" alt="Screenshot 3" width="300">
 
 
 

@@ -1,0 +1,140 @@
+.habitCard {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.habitCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.habitHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.habitName {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.deleteButton {
+  background: #fee;
+  color: #c33;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.deleteButton:hover {
+  background: #fcc;
+  transform: scale(1.1);
+}
+
+.habitDescription {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.completionSection {
+  margin-top: 20px;
+}
+
+.completeButton {
+  width: 100%;
+  padding: 14px;
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.completeButton:hover {
+  background: #e0e0e0;
+  border-color: #667eea;
+}
+
+.completeButton.completed {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.completeButton.completed:hover {
+  opacity: 0.9;
+}
+
+.reminderBadge {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background: #fff3cd;
+  color: #856404;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .stat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+

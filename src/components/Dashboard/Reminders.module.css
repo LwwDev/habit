@@ -1,0 +1,209 @@
+.reminders {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.reminders h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.notifications {
+  margin-bottom: 30px;
+}
+
+.notification {
+  background: #fff3cd;
+  color: #856404;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.remindersList {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.reminderCard {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.reminderCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.reminderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reminderHeader h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.toggleSlider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle input:checked + .toggleSlider {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.toggle input:checked + .toggleSlider:before {
+  transform: translateX(30px);
+}
+
+.reminderTime {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.reminderTime label {
+  font-weight: 600;
+  color: #333;
+}
+
+.reminderTime input {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.reminderTime input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.emptyState {
+  background: white;
+  padding: 60px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.emptyState p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.infoBox {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.infoBox h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.infoBox ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infoBox li {
+  color: #666;
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.infoBox li:before {
+  content: "•";
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .reminderHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .reminderTime {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reminderTime input {
+    width: 100%;
+  }
+}
+

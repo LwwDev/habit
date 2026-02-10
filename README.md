@@ -4,12 +4,12 @@ A full-stack web application for tracking daily habits with streak tracking, pro
 
 ## Features
 
-- 🔐 Firebase Authentication (Login/Signup)
-- 📊 Habit tracking with daily completion
-- 🔥 Streak tracking
-- 📈 Progress analytics dashboard with interactive charts
-- 🔔 Reminders functionality
-- 📱 Responsive design with CSS Modules
+-  Firebase Authentication (Login/Signup)
+-  Habit tracking with daily completion
+-  Streak tracking
+-  Progress analytics dashboard with interactive charts
+-  Reminders functionality
+-  Responsive design with CSS Modules
 
 ## Tech Stack
 

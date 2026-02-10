@@ -1,4 +1,4 @@
-# Habify - Habit Tracking Web App
+# Habit - Habit Tracking Web App
 
 A full-stack web application for tracking daily habits with streak tracking, progress analytics, and reminders.
 
